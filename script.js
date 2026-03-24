@@ -20,12 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==========================================
 function initThemeToggle() {
     const toggle = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('op-theme') || 'dark';
+    const savedTheme = localStorage.getItem('op-theme') || 'light';
 
     // Apply saved theme on load
-    if (savedTheme === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
+    document.documentElement.setAttribute('data-theme', savedTheme);
 
     toggle.addEventListener('click', () => {
         const current = document.documentElement.getAttribute('data-theme');
