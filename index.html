@@ -1,580 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odushe Pelumi — Digital Marketing Expert | Content Creation & Sponsored Ads</title>
-    <meta name="description" content="Odushe Pelumi is a digital marketing expert specializing in content creation, sponsored ads, and social media growth strategies. Transform your brand with data-driven campaigns.">
-    <meta name="keywords" content="digital marketing, content creation, sponsored ads, social media marketing, brand growth, Odushe Pelumi">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odushe Pelumi — Digital Marketer | Websites, Content &amp; Ads</title>
+  <meta name="description" content="I help small businesses and brands grow online with stunning websites, engaging content, and high-converting ads. Let's work together.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cursor Glow Effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-accent">O</span>P
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            </button>
-            <a href="#contact" class="nav-cta">Let's Talk</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+<!-- ======================== NAVBAR ======================== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="navbar-logo"><img src="images/op-logo.png" alt="OP — Odushe Pelumi"></a>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg-overlay"></div>
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge animate-in">
-                    <span class="badge-dot"></span>
-                    Available for Projects
-                </div>
-                <h1 class="hero-title animate-in">
-                    <span class="title-line">Crafting Digital</span>
-                    <span class="title-line title-accent">Experiences</span>
-                    <span class="title-line">That Convert</span>
-                </h1>
-                <p class="hero-subtitle animate-in">
-                    I'm <strong>Odushe Pelumi</strong>, a digital marketer specializing in 
-                    <span class="text-gradient">content creation</span> and 
-                    <span class="text-gradient">sponsored ads</span> that drive real business growth.
-                </p>
-                <div class="hero-actions animate-in">
-                    <a href="#portfolio" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Get in Touch</span>
-                    </a>
-                </div>
-                <div class="hero-stats animate-in">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
-                        <span class="stat-label">Brands Served</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="200">0</span><span class="stat-suffix">+</span>
-                        <span class="stat-label">Campaigns Run</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="5">0</span><span class="stat-suffix">M+</span>
-                        <span class="stat-label">Impressions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image animate-in">
-                <div class="image-frame">
-                    <div class="image-glow"></div>
-                    <img src="images/profile.png" alt="Odushe Pelumi — Digital Marketing Expert" id="profileImage">
-                    <div class="image-border"></div>
-                </div>
-                <div class="floating-card card-1">
-                    <div class="card-icon">📈</div>
-                    <div class="card-text">
-                        <span class="card-value">+340%</span>
-                        <span class="card-label">Avg. ROI</span>
-                    </div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">🎯</div>
-                    <div class="card-text">
-                        <span class="card-value">98%</span>
-                        <span class="card-label">Client Satisfaction</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">What I Do</span>
-                <h2 class="section-title">Services That <span class="text-gradient">Drive Results</span></h2>
-                <p class="section-subtitle">From strategy to execution, I help brands build powerful digital presences that attract, engage, and convert.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card featured" data-tilt>
-                    <div class="service-icon-wrap">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                        </div>
-                    </div>
-                    <span class="service-badge">Most Popular</span>
-                    <h3 class="service-title">Content Creation</h3>
-                    <p class="service-desc">Scroll-stopping content that tells your brand story. From compelling copywriting to stunning visuals — I create content that resonates with your audience and drives engagement.</p>
-                    <ul class="service-features">
-                        <li>Social Media Content</li>
-                        <li>Brand Storytelling</li>
-                        <li>Video & Reel Scripts</li>
-                        <li>Graphic Design Direction</li>
-                        <li>Content Calendars</li>
-                    </ul>
-                    <div class="service-cta">
-                        <a href="#contact" class="service-link">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service-card" data-tilt>
-                    <div class="service-icon-wrap">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                        </div>
-                    </div>
-                    <h3 class="service-title">Sponsored Ads</h3>
-                    <p class="service-desc">Data-driven ad campaigns across Facebook, Instagram, Google, and TikTok. I optimize for conversions, not just clicks — turning your ad spend into measurable revenue.</p>
-                    <ul class="service-features">
-                        <li>Facebook & Instagram Ads</li>
-                        <li>Google Ads & PPC</li>
-                        <li>TikTok Advertising</li>
-                        <li>Retargeting Campaigns</li>
-                        <li>A/B Testing & Analytics</li>
-                    </ul>
-                    <div class="service-cta">
-                        <a href="#contact" class="service-link">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service-card" data-tilt>
-                    <div class="service-icon-wrap">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                    </div>
-                    <h3 class="service-title">Social Media Growth</h3>
-                    <p class="service-desc">Strategic growth tactics to build authentic communities around your brand. I turn followers into loyal customers through engagement-first strategies.</p>
-                    <ul class="service-features">
-                        <li>Community Management</li>
-                        <li>Influencer Partnerships</li>
-                        <li>Growth Strategy</li>
-                        <li>Audience Analytics</li>
-                        <li>Platform Optimization</li>
-                    </ul>
-                    <div class="service-cta">
-                        <a href="#contact" class="service-link">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service-card" data-tilt>
-                    <div class="service-icon-wrap">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                        </div>
-                    </div>
-                    <h3 class="service-title">Brand Strategy</h3>
-                    <p class="service-desc">Comprehensive brand positioning and digital marketing strategy to ensure consistent messaging, audience targeting, and sustainable growth.</p>
-                    <ul class="service-features">
-                        <li>Market Research</li>
-                        <li>Competitor Analysis</li>
-                        <li>Brand Positioning</li>
-                        <li>Campaign Strategy</li>
-                        <li>Performance Reporting</li>
-                    </ul>
-                    <div class="service-cta">
-                        <a href="#contact" class="service-link">Learn More →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
 
-    <!-- Portfolio / Case Studies Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">My Work</span>
-                <h2 class="section-title">Featured <span class="text-gradient">Case Studies</span></h2>
-                <p class="section-subtitle">Real results from real campaigns. Here are some of my most impactful projects.</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-card large">
-                    <div class="portfolio-image">
-                        <img src="images/content-creation.png" alt="Content Creation Campaign" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Content Creation</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Luxury Fashion Brand Launch</h3>
-                        <p>Created a full content strategy and 3-month content calendar for a premium fashion brand launch, resulting in 150K organic reach within the first month.</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">150K</span>
-                                <span class="metric-label">Organic Reach</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">12.5%</span>
-                                <span class="metric-label">Engagement Rate</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">45K</span>
-                                <span class="metric-label">New Followers</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="images/sponsored-ads.png" alt="Sponsored Ads Campaign" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Sponsored Ads</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>E-Commerce ROAS Boost</h3>
-                        <p>Designed and deployed a multi-platform ad campaign achieving 4.2x ROAS on a ₦500K monthly budget.</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">4.2x</span>
-                                <span class="metric-label">ROAS</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">₦2.1M</span>
-                                <span class="metric-label">Revenue</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="images/social-media-case.png" alt="Social Media Growth Campaign" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Social Media</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Viral Content Series</h3>
-                        <p>Produced a viral Instagram Reels series that generated 2M+ views and 80K new followers in 6 weeks.</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">2M+</span>
-                                <span class="metric-label">Views</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">80K</span>
-                                <span class="metric-label">Followers</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card wide">
-                    <div class="portfolio-image">
-                        <img src="images/ecommerce-ads.png" alt="E-commerce Ad Campaign" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Sponsored Ads</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Product Launch Multi-Platform Campaign</h3>
-                        <p>Orchestrated a coordinated product launch across Facebook, Instagram, Google Ads, and TikTok — driving 320% ROAS and 15K product sales in the first month.</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">320%</span>
-                                <span class="metric-label">ROAS</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">15K</span>
-                                <span class="metric-label">Products Sold</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">₦8.5M</span>
-                                <span class="metric-label">Revenue</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="images/brand-strategy.png" alt="Brand Strategy Project" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Strategy</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Brand Repositioning & Growth</h3>
-                        <p>Complete brand strategy overhaul for a tech startup, increasing brand awareness by 275% and lead generation by 180%.</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">275%</span>
-                                <span class="metric-label">Awareness</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">180%</span>
-                                <span class="metric-label">Lead Growth</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="navbar-links" id="nav-links">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Work</a>
+      <a href="#about">About</a>
+      <a href="#cta">Contact</a>
+      <a href="#cta" class="btn-lets-talk">Let's Talk</a>
+    </div>
+  </div>
+</nav>
 
-    <!-- Process Section -->
-    <section class="process">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">How I Work</span>
-                <h2 class="section-title">My <span class="text-gradient">Process</span></h2>
-                <p class="section-subtitle">A proven framework that consistently delivers results for every client engagement.</p>
-            </div>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3>Discovery & Research</h3>
-                        <p>Deep dive into your brand, audience, competitors, and goals. We define clear KPIs and map out the digital landscape.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3>Strategy & Planning</h3>
-                        <p>Develop a data-driven content and advertising strategy tailored to your business objectives and target audience.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3>Create & Launch</h3>
-                        <p>Produce high-quality content and deploy optimized ad campaigns across the most effective platforms for your brand.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Optimize & Scale</h3>
-                        <p>Continuously monitor, test, and refine campaigns using real-time data to maximize your ROI and scale success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Available for new projects
+      </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="section-container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">About Me</span>
-                    <h2 class="section-title">Turning Brands Into <span class="text-gradient">Digital Powerhouses</span></h2>
-                    <p class="about-text">
-                        I'm Odushe Pelumi, a passionate digital marketer with a mission to help brands stand out in the noisy digital world. 
-                        With years of hands-on experience in content creation and paid advertising, I've helped over 50 brands transform their 
-                        online presence and achieve measurable growth.
-                    </p>
-                    <p class="about-text">
-                        My approach combines creative storytelling with data-driven strategy. I don't just create beautiful content — I craft 
-                        narratives that resonate with your audience and pair them with precisely targeted ad campaigns that drive real conversions.
-                    </p>
-                    <p class="about-text">
-                        Whether it's building a content engine that keeps your audience engaged, or launching sponsored ad campaigns that deliver 
-                        exceptional ROAS, I bring the expertise and creativity needed to elevate your digital marketing game.
-                    </p>
-                    <div class="about-skills">
-                        <div class="skill-tag">Content Strategy</div>
-                        <div class="skill-tag">Facebook Ads</div>
-                        <div class="skill-tag">Instagram Marketing</div>
-                        <div class="skill-tag">Google Ads</div>
-                        <div class="skill-tag">TikTok Ads</div>
-                        <div class="skill-tag">Copywriting</div>
-                        <div class="skill-tag">Brand Storytelling</div>
-                        <div class="skill-tag">Analytics & Reporting</div>
-                        <div class="skill-tag">A/B Testing</div>
-                        <div class="skill-tag">Community Management</div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="about-image-wrap">
-                        <img src="images/profile.png" alt="Odushe Pelumi" loading="lazy">
-                    </div>
-                    <div class="experience-badge">
-                        <span class="exp-number">5+</span>
-                        <span class="exp-text">Years of<br>Experience</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <h1>I Help Small Businesses &amp; Brands Grow Online With <span class="accent">Websites, Content &amp; Ads</span></h1>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">Testimonials</span>
-                <h2 class="section-title">What Clients <span class="text-gradient">Say</span></h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Pelumi completely transformed our social media presence. Our engagement skyrocketed and we saw a 3x increase in leads within just two months of working together."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">AO</div>
-                        <div class="author-info">
-                            <span class="author-name">Adewale Ogunleye</span>
-                            <span class="author-role">CEO, TechNova Nigeria</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"The ROI on our Facebook ad campaigns was incredible. Pelumi's strategic approach to targeting and creative content made all the difference for our e-commerce store."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">FK</div>
-                        <div class="author-info">
-                            <span class="author-name">Funke Kadiri</span>
-                            <span class="author-role">Founder, GlowUp Beauty</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Working with Pelumi was a game-changer. His content strategy helped us build a loyal community of 100K+ followers who genuinely love our brand."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">CI</div>
-                        <div class="author-info">
-                            <span class="author-name">Chinedu Ibeh</span>
-                            <span class="author-role">Marketing Director, FreshBite</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <p class="hero-sub">From stunning WordPress websites to content that connects and ads that convert — I bring strategy, creativity, and data together to grow your business online.</p>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="section-container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Create Something <span class="text-gradient">Amazing</span></h2>
-                    <p class="contact-text">Ready to take your brand to the next level? Let's discuss how I can help you achieve your digital marketing goals.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            </div>
-                            <div>
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:001odushey@gmail.com" class="contact-value">001odushey@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div>
-                                <span class="contact-label">Phone</span>
-                                <a href="tel:+2349067370007" class="contact-value">+234 906 737 0007</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <div>
-                                <span class="contact-label">Location</span>
-                                <span class="contact-value">Akure, Nigeria</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                        </a>
-                        <a href="https://wa.me/2349067370007" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pelumi-odushe-0938041a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-wrap">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required placeholder=" ">
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected>What service do you need?</option>
-                                <option value="content-creation">Content Creation</option>
-                                <option value="sponsored-ads">Sponsored Ads</option>
-                                <option value="social-media">Social Media Growth</option>
-                                <option value="brand-strategy">Brand Strategy</option>
-                                <option value="full-package">Full Package</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-                            <span>Send Message</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="hero-buttons">
+        <a href="tel:+2349067370007" class="btn-primary">📞 Book a Free Call</a>
+        <a href="https://wa.me/2349067370007" target="_blank" class="btn-whatsapp">
+          <span class="green-dot"></span> WhatsApp Me
+        </a>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="section-container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="nav-logo footer-logo">
-                        <span class="logo-accent">O</span>P
-                    </a>
-                    <p class="footer-tagline">Crafting digital experiences that convert.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Odushe Pelumi. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="hero-photo-wrapper">
+      <div class="hero-photo-ring">
+        <!-- Replace this div with <img src="your-photo.jpg"> -->
+        <img id="hero-photo" src="images/pelumi.jpg" alt="Odushe Pelumi — Digital Marketer">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ======================== SERVICES ======================== -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="section-label">WHAT I DO</p>
+    <h2 class="section-title">My Services</h2>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <div class="service-icon" style="background:#E6F1FB;">
+          <span class="icon-dot" style="background:#185FA5;"></span>
+        </div>
+        <h3>WordPress Web Design</h3>
+        <p>Fast, clean, and conversion-focused websites built on WordPress. Whether you need a business site, a landing page, or an online store, I design every page with your goals in mind.</p>
+        <a href="#cta" class="card-link">Get this →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <div class="service-icon" style="background:#EAF3DE;">
+          <span class="icon-dot" style="background:#3B6D11;"></span>
+        </div>
+        <h3>Content Creation</h3>
+        <p>From social media graphics and captions to brand copy and video scripts — I create content that tells your story, builds trust, and keeps your audience coming back.</p>
+        <a href="#cta" class="card-link">Get this →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="service-icon" style="background:#FAEEDA;">
+          <span class="icon-dot" style="background:#854F0B;"></span>
+        </div>
+        <h3>Social Media Ads</h3>
+        <p>Strategic Meta and Instagram ad campaigns designed to put your brand in front of the right people and turn clicks into real paying customers.</p>
+        <a href="#cta" class="card-link">Get this →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section class="about" id="about">
+  <div class="container">
+    <p class="section-label">MY STORY</p>
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+      <div class="about-photo">
+        <img src="images/pelumi.jpg" alt="Pelumi">
+      </div>
+      <div class="about-text">
+        <p>Hi, I'm Pelumi — a creative, detail-oriented digital marketer with over 2 years of hands-on experience helping small businesses, e-commerce stores, and personal brands show up powerfully online. I'm passionate about combining strategy with creativity to deliver work that doesn't just look good — it gets results. Every website I build, every piece of content I create, and every ad I run is backed by clear thinking and a genuine desire to see your business grow.</p>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Projects completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Core services</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PORTFOLIO ======================== -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <p class="section-label">MY WORK</p>
+    <div class="portfolio-header">
+      <h2 class="section-title" style="margin-bottom:0;">Project Showcase</h2>
+      <a href="#portfolio" class="view-all">View all →</a>
+    </div>
+    <p class="portfolio-note">Sample projects</p>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-thumb" style="background:#B5D4F4;"></div>
+        <div class="project-body">
+          <h4>NaijaFresh Foods</h4>
+          <span class="tag">WordPress</span>
+          <p class="project-desc">E-commerce website for a Nigerian food brand with product pages and order flow.</p>
+          <a href="#" class="project-link">View project →</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-thumb" style="background:#C0DD97;"></div>
+        <div class="project-body">
+          <h4>StyleByAmara</h4>
+          <span class="tag">WordPress</span>
+          <p class="project-desc">Fashion boutique website with lookbook gallery and contact booking.</p>
+          <a href="#" class="project-link">View project →</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-thumb" style="background:#FAC775;"></div>
+        <div class="project-body">
+          <h4>GrowthCoach NG</h4>
+          <span class="tag">Content</span>
+          <p class="project-desc">Full Instagram content pack — 12 graphics, captions, and a content calendar.</p>
+          <a href="#" class="project-link">View project →</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-thumb" style="background:#F4C0D1;"></div>
+        <div class="project-body">
+          <h4>TechStart Lagos</h4>
+          <span class="tag">Content</span>
+          <p class="project-desc">Brand storytelling campaign including copy, visuals, and a launch video script.</p>
+          <a href="#" class="project-link">View project →</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-thumb" style="background:#9FE1CB;"></div>
+        <div class="project-body">
+          <h4>ShopEasy Nigeria</h4>
+          <span class="tag">Ads</span>
+          <p class="project-desc">Meta lead generation campaign targeting Lagos e-commerce shoppers.</p>
+          <a href="#" class="project-link">View project →</a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div class="project-thumb" style="background:#F5C4B3;"></div>
+        <div class="project-body">
+          <h4>Glowskin by Ada</h4>
+          <span class="tag">Ads</span>
+          <p class="project-desc">Instagram ads campaign for a skincare brand driving product sales.</p>
+          <a href="#" class="project-link">View project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <p class="section-label">KIND WORDS</p>
+    <h2 class="section-title">What Clients Say</h2>
+
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Working with Pelumi was one of the best decisions I made for my business. Our new website looks incredible and we've already started getting inquiries through it."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#B5D4F4; color:#185FA5;">AO</div>
+          <div class="author-info">
+            <div class="name">Adaeze O.</div>
+            <div class="role">Founder, GlowSkin Beauty, Lagos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Pelumi ran our first Instagram ad campaign and the results were beyond what we expected. Professional, responsive, and genuinely invested in our growth."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#C0DD97; color:#3B6D11;">ET</div>
+          <div class="author-info">
+            <div class="name">Emeka T.</div>
+            <div class="role">CEO, ShopEasy Nigeria, Abuja</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 — full width -->
+      <div class="testimonial-card full-width">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"The content pack Pelumi created for us completely transformed our Instagram page. We went from posting randomly to having a brand that actually looks and feels professional."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#FAC775; color:#854F0B;">CB</div>
+          <div class="author-info">
+            <div class="name">Chiamaka B.</div>
+            <div class="role">Personal Brand Coach, Port Harcourt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROCESS ======================== -->
+<section class="process" id="process">
+  <div class="container">
+    <p class="section-label">THE PROCESS</p>
+    <h2 class="section-title">How I Work</h2>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-circle">1</div>
+        <h4>Discovery Call</h4>
+        <p>We talk about your business, your goals, and exactly what you need</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">2</div>
+        <h4>Strategy</h4>
+        <p>I put together a clear, tailored plan for your project</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">3</div>
+        <h4>Execution</h4>
+        <p>I get to work — designing, writing, building, and launching</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">4</div>
+        <h4>Delivery</h4>
+        <p>You receive polished, results-driven work delivered on time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CTA ======================== -->
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Ready to Take Your Business Online?</h2>
+    <p>Whether you need a website that wins, content that connects, or ads that convert — let's make it happen together.</p>
+
+    <div class="cta-buttons">
+      <a href="tel:+2349067370007" class="btn-cta-primary">📞 Book a Free Call</a>
+      <a href="https://wa.me/2349067370007" target="_blank" class="btn-cta-outline">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-left">
+      <div class="footer-name">Odushe Pelumi</div>
+      <div class="footer-tagline">Digital Marketer — Websites, Content &amp; Ads</div>
+      <div class="footer-copy">© 2025 Odushe Pelumi. All rights reserved.</div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/pelumi-odushe-0938041a8" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/growthwithpelumi" target="_blank">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================== FLOATING WHATSAPP ======================== -->
+<a href="https://wa.me/2349067370007" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M16.004 2.667A13.262 13.262 0 0 0 2.72 15.893a13.16 13.16 0 0 0 1.792 6.64L2.667 29.333l7.04-1.813a13.3 13.3 0 0 0 6.28 1.6h.017A13.28 13.28 0 0 0 16.004 2.667Zm0 24.32a11.04 11.04 0 0 1-5.6-1.53l-.4-.24-4.16 1.08 1.12-4.067-.267-.413a10.96 10.96 0 0 1-1.693-5.88A11.06 11.06 0 0 1 16.004 4.88a11.06 11.06 0 0 1 0 22.107Zm6.067-8.28c-.333-.167-1.973-.973-2.28-1.08-.307-.12-.527-.167-.747.167s-.867 1.08-1.053 1.3c-.193.22-.387.247-.72.08a9.08 9.08 0 0 1-2.68-1.653 10.04 10.04 0 0 1-1.853-2.307c-.193-.333-.02-.513.147-.68.153-.147.333-.387.5-.58.167-.193.22-.333.333-.553.113-.22.06-.413-.027-.58s-.747-1.8-1.027-2.467c-.267-.64-.54-.553-.747-.56l-.633-.013a1.213 1.213 0 0 0-.88.413 3.7 3.7 0 0 0-1.16 2.753c0 1.62 1.18 3.187 1.347 3.407.167.22 2.327 3.547 5.64 4.973.787.34 1.4.547 1.88.7.793.247 1.513.213 2.087.127.633-.093 1.973-.807 2.253-1.587.273-.78.273-1.447.193-1.587-.08-.14-.3-.22-.633-.387Z"/>
+  </svg>
+</a>
+
+<!-- ======================== INLINE JS ======================== -->
+<script>
+  // Theme toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  // Check saved preference, then system preference
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    setTheme(saved);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+
+  // Hamburger toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // Close menu when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
+
 </body>
 </html>
